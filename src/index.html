@@ -5,21 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Cocínate Vejer</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="pagina">
+    <include src="./views/header.html"></include>
+    <div class="poster pagina__poster">
+      <h1 class="poster__titulo text-primary">Buscamos la mejor hamburguesa de Vejer</h1>
+      <p class="poster__texto text-dark">Participa con tu hamburguesa en este delicioso concurso en el que deleitaremos a los paladares más exigentes del pueblo. Consigue una fusión perfecta entre clasicismo, modernidad y alimentos autóctonos de Vejer y podrás ganar hasta 3.000 euros, junto al agradecimiento de los comensales que degusten tu hamburguesa.</p>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
