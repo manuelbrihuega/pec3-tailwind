@@ -9,7 +9,9 @@ module.exports = {
       'color-bordes': '#a3cfbb',
       'color-fondo-tooltips': '#d1e7dd',
       'color-texto-tooltips': '#0f5132',
-      'blanco': '#fff'
+      'blanco': 'rgba(255, 255, 255, 1)',
+      'blanco-semitransparente': 'rgba(255, 255, 255, 0.5)',
+      'oscuro': '#051b11'
       /*
       "primary":    #0f5132,
   "secondary":  #b46f21,
@@ -31,21 +33,30 @@ $card-border-color: $color-bordes;
       serif: ['Georgia', 'Times New Roman', 'serif'],
     },
     fontSize: {
+      '2.5rem': '2.5rem',
       '2rem': '2rem',
       '1.5rem': '1.5rem',
+      '1.25rem': '1.25rem',
       '1.2rem': '1.2rem',
       '0.6rem': '0.6rem'
     },
 
     screens: {
-      'sm': {'max':'300px'},
-      'md': {'max':'700px'},
-      'lg': {'max':'950px'}
+      'mobile': '300px',
+      'tablet': '700px',
+      'desktop': '950px'
     },
 
-
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      backgroundImage: {
+        'portada': "url('../images/2.jpg')"
+      },
+      flexBasis: {
+        '2/7': '30%'
+      }
+    },
+  }
 }
+
+
 

@@ -7,11 +7,29 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Cocínate Vejer</title>
   </head>
-  <body class="pagina">
-    <include src="./views/header.html"></include>
-    <div class="poster pagina__poster">
-      <h1 class="poster__titulo text-primary">Buscamos la mejor hamburguesa de Vejer</h1>
-      <p class="poster__texto text-dark">Participa con tu hamburguesa en este delicioso concurso en el que deleitaremos a los paladares más exigentes del pueblo. Consigue una fusión perfecta entre clasicismo, modernidad y alimentos autóctonos de Vejer y podrás ganar hasta 3.000 euros, junto al agradecimiento de los comensales que degusten tu hamburguesa.</p>
+  <body class="h-screen m-0 font-sans text-base bg-blanco">
+    <div class="absolute z-1 w-full py-8 px-2 desktop:px-20 tablet:px-8">
+      <div class="w-fit font-bold text-1.5rem mx-auto float-none desktop:text-2rem tablet:float-left">
+          <a href="./index.html" class="no-underline text-1.5rem mobile:text-2rem">
+              <i class="fas fa-burger text-verde-secundario"></i>
+              <span class="text-verde-primario">Cocínate Vejer</span>
+          </a>
+      </div>
+      <ul class="flex flex-wrap list-none pl-0 mt-0 mb-0 float-none text-verde-primario justify-center tablet:float-right">
+        <li>
+          <a class="block no-underline py-2 px-4 hover:text-verde-hover" aria-current="page" href="./cocineros.html">Cocineros</a>
+        </li>
+        <li>
+          <a class="block no-underline py-2 px-4 hover:text-verde-hover" href="#">Historia</a>
+        </li>
+        <li>
+          <a class="block no-underline py-2 px-4 hover:text-verde-hover" href="#">Apúntate</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col justify-end h-screen text-center bg-portada bg-center bg-cover">
+      <h1 class="px-6 pt-20 m-0 bg-blanco-semitransparente desktop:px-64 tablet:px-28 text-verde-primario text-1.5rem mobile:text-2rem desktop:text-2.5rem leading-tight font-medium">Buscamos la mejor hamburguesa de Vejer</h1>
+      <p class="px-6 pb-20 m-0 bg-blanco-semitransparente text-oscuro desktop:px-64 tablet:px-28 text-base">Participa con tu hamburguesa en este delicioso concurso en el que deleitaremos a los paladares más exigentes del pueblo. Consigue una fusión perfecta entre clasicismo, modernidad y alimentos autóctonos de Vejer y podrás ganar hasta 3.000 euros, junto al agradecimiento de los comensales que degusten tu hamburguesa.</p>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
