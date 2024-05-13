@@ -34,10 +34,14 @@ $card-border-color: $color-bordes;
     },
     fontSize: {
       '2.5rem': '2.5rem',
+      '2.25rem': '2.25rem',
       '2rem': '2rem',
+      '1.7rem': '1.7rem',
       '1.5rem': '1.5rem',
       '1.25rem': '1.25rem',
       '1.2rem': '1.2rem',
+      '1rem': '1rem',
+      '0.75rem': '0.75rem',
       '0.6rem': '0.6rem'
     },
 
