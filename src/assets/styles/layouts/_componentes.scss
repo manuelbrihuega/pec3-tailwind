@@ -1,0 +1,9 @@
+@layer components {
+    .card {
+        @apply w-full border border-solid border-color-bordes rounded-md;
+    }
+
+    .encabezado {
+        @apply pt-20 text-center text-verde-primario font-medium text-1.5rem leading-none desktop:text-2.5rem tablet:text-2.25rem mobile:text-1.7rem mb-2;
+    }
+}

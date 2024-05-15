@@ -1,0 +1,6 @@
+<div class="card">
+    <img src="{{ imagen }}" class="rounded-t-md w-full" alt="Imagen de perfil de {{ titulo }}">
+    <div class="flex-auto p-4">
+      <include src="components/info.html" locals='{"titulo": "{{ titulo }}", "texto": "{{ texto }}"}'></include>
+    </div>
+</div>

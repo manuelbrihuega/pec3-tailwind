@@ -30,53 +30,17 @@
         </div>
     </div>
     <div class="px-4 desktop:px-20 tablet:px-20 mobile:px-8">
-      <h1 class="pt-20 text-center text-verde-primario font-medium text-1.5rem leading-none desktop:text-2.5rem tablet:text-2.25rem mobile:text-1.7rem mb-2">Mejores Cocineros participantes</h1>
+      <h1 class="encabezado">Mejores Cocineros participantes</h1>
       <div class="grid grid-cols-1 m-6 desktop:grid-cols-3 tablet:grid-cols-2 gap-12">
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/martin.jpg" class="rounded-t-md w-full" alt="Imagen de perfil de Martín Berasategui">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">Martín Berasategui</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Chef español que cuenta con doce estrellas Michelin. Se trata de uno de los cocineros más laureados.</p>
-          </div>
-        </div>
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/chicote.jpg" class="rounded-t-md w-full" alt="Imagen de perfil de Alberto Chicote">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">Alberto Chicote</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Chef, escritor y presentador de televisión español. Es un enamorado de la tradición y nuestro concursante más influyente.</p>
-          </div>
-        </div>
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/angel.jpg" class="rounded-t-md w-full" alt="Imagen de perfil de Ángel León">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">Ángel León</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Conocido como el "Chef del Mar", es el máxmo exponente en cuanto a cocina innovadora y marinera. Un lujo para nuestro concurso.</p>
-          </div>
-        </div>
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/davidejorge.png" class="rounded-t-md w-full" alt="Imagen de perfil de David de Jorge">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">David de Jorge</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Más conocido como Robin Food, es un cocinero y periodista español. Es gerente de la editorial Gourmandia, autor de varios libros gastronómicos y de variados blogs.</p>
-          </div>
-        </div>
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/peperodriguez.jpg" class="rounded-t-md w-full" alt="Imagen de perfil de Pepe Rodríguez">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">Pepe Rodríguez</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Conocido popularmente por dirigir el programa de televisión "Master Chef". Chef del restaurante El Bohío, con una estrella Michelin.</p>
-          </div>
-        </div>
-        <div class="w-full border border-solid border-color-bordes rounded-md">
-          <img src="./assets/images/susidiaz.jpg" class="rounded-t-md w-full" alt="Imagen de perfil de Susi Díaz">
-          <div class="flex-auto p-4">
-            <h5 class="text-1.25rem leading-tight font-medium text-verde-primario mb-2">Susi Díaz</h5>
-            <p class="text-verde-primario text-0.75rem leading-snug mobile:text-1rem">Chef del restaurante La Finca, del que es propietaria. Participa como colaboradora y presentadora en diferentes programas de televisión y aporta siempre un toque tradicional a su cocina.</p>
-          </div>
-        </div>
+        <include src="components/card.html" locals='{"titulo": "Martín Berasategui", "imagen": "./assets/images/martin.jpg", "texto": "Chef español que cuenta con doce estrellas Michelin. Se trata de uno de los cocineros más laureados."}'></include>
+        <include src="components/card.html" locals='{"titulo": "Alberto Chicote", "imagen": "./assets/images/chicote.jpg", "texto": "Chef, escritor y presentador de televisión español. Es un enamorado de la tradición y nuestro concursante más influyente."}'></include>
+        <include src="components/card.html" locals='{"titulo": "Ángel León", "imagen": "./assets/images/angel.jpg", "texto": "Conocido como el Chef del Mar, es el máxmo exponente en cuanto a cocina innovadora y marinera. Un lujo para nuestro concurso."}'></include>
+        <include src="components/card.html" locals='{"titulo": "David de Jorge", "imagen": "./assets/images/davidejorge.png", "texto": "Más conocido como Robin Food, es un cocinero y periodista español. Es gerente de la editorial Gourmandia, autor de varios libros gastronómicos y de variados blogs."}'></include>
+        <include src="components/card.html" locals='{"titulo": "Pepe Rodríguez", "imagen": "./assets/images/peperodriguez.jpg", "texto": "Conocido popularmente por dirigir el programa de televisión Master Chef. Chef del restaurante El Bohío, con una estrella Michelin."}'></include>
+        <include src="components/card.html" locals='{"titulo": "Susi Díaz", "imagen": "./assets/images/susidiaz.jpg", "texto": "Chef del restaurante La Finca, del que es propietaria. Participa como colaboradora y presentadora en diferentes programas de televisión y aporta siempre un toque tradicional a su cocina."}'></include>
       </div>
     </div>
-    <include src="./views/footer.html"></include>
+    <include src="./components/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
