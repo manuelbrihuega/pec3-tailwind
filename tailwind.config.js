@@ -12,26 +12,13 @@ module.exports = {
       'blanco': 'rgba(255, 255, 255, 1)',
       'blanco-semitransparente': 'rgba(255, 255, 255, 0.5)',
       'oscuro': '#051b11'
-      /*
-      "primary":    #0f5132,
-  "secondary":  #b46f21,
-  "success":    #198754,
-  "info":       #d1e7dd,
-  "warning":    #cc9a06,
-  "danger":     #58151c,
-  "light":      #a3cfbb,
-  "dark":       #051b11
-  $nav-link-color: #0f5132;
-$nav-link-hover-color: #198754;
-$tooltip-bg: $color-fondo-tooltips;
-$tooltip-color: $color-texto-tooltips;
-$card-border-color: $color-bordes;
-      */
     },
+
     fontFamily: {
       sans: ['Segoe UI', 'roboto', 'Helvetica Neue', 'arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'],
       serif: ['Georgia', 'Times New Roman', 'serif'],
     },
+
     fontSize: {
       '2.5rem': '2.5rem',
       '2.25rem': '2.25rem',
@@ -54,13 +41,7 @@ $card-border-color: $color-bordes;
     extend: {
       backgroundImage: {
         'portada': "url('../images/2.jpg')"
-      },
-      flexBasis: {
-        '2/7': '30%'
       }
     },
   }
 }
-
-
-
